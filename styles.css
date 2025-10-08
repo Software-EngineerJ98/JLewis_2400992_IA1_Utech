@@ -1,0 +1,138 @@
+:root { 
+  --main-color: #1565C0;        /* Deep Royal Blue */
+  --secondary-color: #90CAF9;   /* Light Sky Blue */
+  --accent-color: #E3F2FD;      /* Very light blue background */
+  --text-color: #222222;
+  --font: 'Segoe UI', 'Arial', sans-serif;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: var(--font);
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  line-height: 1.6;
+
+  background-image: url("Assets/background5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  
+}
+
+/* ===== Header ===== */
+header {
+  background: var(--main-color);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+/* ===== Navbar ===== */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow);
+  font-size: 1em;
+}
+
+.navbar ul li {
+  flex: 1 1 auto;
+}
+
+.navbar ul a {
+  display: block;
+  color: var(--main-color);
+  padding: 15px 20px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.navbar ul a:hover {
+  background-color: var(--main-color);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* ===== Sections ===== */
+section {
+  margin: 25px auto;
+  padding: 20px;
+  max-width: 900px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+section h2 {
+  color: var(--main-color);
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+}
+
+/* ===== Images ===== */
+img {
+  max-width: 250px;
+  border-radius: 12px;
+  display: block;
+  margin: 10px 0;
+  box-shadow: var(--shadow);
+}
+
+/* ===== Tables ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--secondary-color);
+  color: #000;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 30px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    width: 100%;
+  }
+
+  section {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
